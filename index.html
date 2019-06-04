@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Игра</title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+<body class="loop">
+	<script type="text/javascript">
+		let score = 100;
+	</script>
+<div>
+	<h1>Очки</h1>
+	<h1><span class="score">100</span></h1>
+	<div>
+		<div class="gienas xop" style="background-image: url(giena.jpg);background-size: 100% 100%; height: 150px; width: 200px;position: absolute;margin-left: 1100px;margin-top: 500px"></div>
+		<div class="jirafas xop" style="background-image: url(jiraf.jpg);background-size: 100% 100%; height: 150px; width: 200px;position: absolute;margin-left: 440px;margin-top: 600px"></div>
+		<div class="cow3 xop" style="background-image: url(korova.jpg);background-size: 100% 100%; height: 150px; width: 200px;position: absolute;margin-left: 1300px"></div>
+		<div class="lionion xop" style="background-image: url(lion.jpg);background-size: 100% 100%; height: 150px; width: 200px;position: absolute;margin-left: 650px;margin-top: 400px"></div>
+		<div class="antiloop xop" style="background-image: url(Antilop.jpg);background-size: 100% 100%; height: 150px; width: 200px;position: absolute;margin-left: 400px"></div>
+		<div class="bagemot xop" style="background-image: url(begemot.jpg);background-size: 100% 100%; height: 150px; width: 200px;position: absolute;margin-left: 800px;margin-top: 100px"></div>
+		<div class="elep xop" style="background-image: url(elephant.jpg);background-size: 100% 100%; height: 150px; width: 200px;position: absolute;margin-top: 400px"></div>
+		
+		<div class="cow xop" style="background-image: url(nosorog.jpg);background-size: 100% 100%; height: 150px; width: 200px;position: absolute;"></div>
+		<div class="cow2 xop" style="background-image: url(zebra.jpg);background-size: 100% 100%; height: 150px; width: 200px;position: absolute;margin-left: 1250px;margin-top: 200px"></div>
+	</div>
+</div>
+
+
+
+<script type="text/javascript">
+
+	let rapat = function(
+		){
+		document.querySelector(".score").innerHTML = score = score - 50
+		alert('Nope -50')
+	}
+	document.querySelector(".lionion").onclick = function(){
+		document.querySelector(".score").innerHTML = score = score + 100
+		document.querySelector(".lionion").style.backgroundImage = "url(lion.jpg)"
+		alert('yes of hors +100')
+		document.querySelector(".lionion").style.backgroundSize = "100% 100%";
+
+	}
+	document.querySelector(".gienas").onclick = function(){
+		document.querySelector(".score").innerHTML = score = score + 100
+		document.querySelector(".gienas").style.backgroundImage = "url(giena.jpg)"
+		alert('yes of hors +100')
+		document.querySelector(".gienas").style.backgroundSize = "100% 100%";
+
+	}
+	document.querySelector(".jirafas").onclick = function(){
+		document.querySelector(".score").innerHTML = score = score + 100
+		document.querySelector(".jirafas").style.backgroundImage = "url(jiraf.jpg)"
+		alert('yes of hors +100')
+		document.querySelector(".jirafas").style.backgroundSize = "100% 100%";
+
+	}
+	document.querySelector(".cow").onclick = rapat
+	document.querySelector(".cow2").onclick = rapat
+	document.querySelector(".bagemot").onclick = rapat
+	document.querySelector(".antiloop").onclick = rapat
+	document.querySelector(".elep").onclick = rapat
+	document.querySelector(".cow3").onclick = rapat
+
+
+
+	let x = function(){
+		document.querySelector(".xop").style.background = "black";
+		alert('Найди Льва,Жирафа и Гиену')
+	}
+
+	setTimeout(x,6000)
+	let r = function(){
+		document.querySelector(".jirafas").style.background = "black";
+	}
+
+	setTimeout(r,6000)
+	let t = function(){
+		document.querySelector(".cow3").style.background = "black";
+	}
+
+	setTimeout(t,6000)
+	let y = function(){
+		document.querySelector(".lionion").style.background = "black";
+	}
+
+	setTimeout(y,6000)
+	let u = function(){
+		document.querySelector(".antiloop").style.background = "black";
+	}
+
+	setTimeout(u,6000)
+	let i = function(){
+		document.querySelector(".bagemot").style.background = "black";
+	}
+
+	setTimeout(i,6000)
+	let o = function(){
+		document.querySelector(".elep").style.background = "black";
+	}
+
+	setTimeout(o,6000)
+	let p = function(){
+		document.querySelector(".cow").style.background = "black";
+	}
+
+	setTimeout(p,6000)
+	let c = function(){
+		document.querySelector(".cow2").style.background = "black";
+	}
+
+	setTimeout(c,6000)
+</script>
+</body>
+</html>
